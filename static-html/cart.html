@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Wooddale Digital</title>
+    <meta name="description" content="Review your cart and proceed to checkout for beautiful digital wedding stationery and templates.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo-circle.png" alt="Wooddale Digital" class="logo-image">
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="products.html" class="nav-link">Shop</a>
+                <a href="categories.html" class="nav-link">Categories</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="faq.html" class="nav-link">FAQ</a>
+            </nav>
+            <div class="header-actions">
+                <button class="icon-btn" aria-label="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                </button>
+                <button class="icon-btn" aria-label="Wishlist">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                </button>
+                <a href="cart.html" class="icon-btn" aria-label="Shopping Cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                </a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Shopping Cart</h1>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <span>Cart</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cart Content -->
+        <section class="cart-section">
+            <div class="container">
+                <div class="cart-layout">
+                    <!-- Cart Items -->
+                    <div class="cart-items-container">
+                        <div class="cart-table">
+                            <!-- Table Header -->
+                            <div class="cart-table-header">
+                                <div class="cart-col-product">Product</div>
+                                <div class="cart-col-price">Price</div>
+                                <div class="cart-col-quantity">Quantity</div>
+                                <div class="cart-col-total">Total</div>
+                            </div>
+
+                            <!-- Cart Item 1 -->
+                            <div class="cart-item">
+                                <div class="cart-col-product">
+                                    <div class="cart-product-info">
+                                        <img src="https://images.unsplash.com/photo-1607827448387-a67db1383b59?w=150&h=150&fit=crop" alt="Botanical Wedding Invitation Suite" class="cart-product-image">
+                                        <div class="cart-product-details">
+                                            <h3>Botanical Wedding Invitation Suite</h3>
+                                            <p>Wedding Invitations</p>
+                                            <button class="cart-remove-btn mobile-only">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg>
+                                                Remove
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart-col-price">
+                                    <span class="mobile-label">Price:</span>
+                                    $12.99
+                                </div>
+                                <div class="cart-col-quantity">
+                                    <div class="quantity-selector">
+                                        <button class="quantity-btn">−</button>
+                                        <span class="quantity-value">1</span>
+                                        <button class="quantity-btn">+</button>
+                                    </div>
+                                </div>
+                                <div class="cart-col-total">
+                                    <span class="mobile-label">Total:</span>
+                                    <span class="item-total">$12.99</span>
+                                    <button class="cart-remove-btn desktop-only">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Cart Item 2 -->
+                            <div class="cart-item">
+                                <div class="cart-col-product">
+                                    <div class="cart-product-info">
+                                        <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?w=150&h=150&fit=crop" alt="Minimalist Save the Date" class="cart-product-image">
+                                        <div class="cart-product-details">
+                                            <h3>Minimalist Save the Date</h3>
+                                            <p>Save the Dates</p>
+                                            <button class="cart-remove-btn mobile-only">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg>
+                                                Remove
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart-col-price">
+                                    <span class="mobile-label">Price:</span>
+                                    $8.99
+                                </div>
+                                <div class="cart-col-quantity">
+                                    <div class="quantity-selector">
+                                        <button class="quantity-btn">−</button>
+                                        <span class="quantity-value">2</span>
+                                        <button class="quantity-btn">+</button>
+                                    </div>
+                                </div>
+                                <div class="cart-col-total">
+                                    <span class="mobile-label">Total:</span>
+                                    <span class="item-total">$17.98</span>
+                                    <button class="cart-remove-btn desktop-only">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Cart Item 3 -->
+                            <div class="cart-item">
+                                <div class="cart-col-product">
+                                    <div class="cart-product-info">
+                                        <img src="https://images.unsplash.com/photo-1595508064774-5ff825a07b23?w=150&h=150&fit=crop" alt="Floral RSVP Card Template" class="cart-product-image">
+                                        <div class="cart-product-details">
+                                            <h3>Floral RSVP Card Template</h3>
+                                            <p>RSVP Cards</p>
+                                            <button class="cart-remove-btn mobile-only">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg>
+                                                Remove
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart-col-price">
+                                    <span class="mobile-label">Price:</span>
+                                    $6.99
+                                </div>
+                                <div class="cart-col-quantity">
+                                    <div class="quantity-selector">
+                                        <button class="quantity-btn">−</button>
+                                        <span class="quantity-value">1</span>
+                                        <button class="quantity-btn">+</button>
+                                    </div>
+                                </div>
+                                <div class="cart-col-total">
+                                    <span class="mobile-label">Total:</span>
+                                    <span class="item-total">$6.99</span>
+                                    <button class="cart-remove-btn desktop-only">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cart-actions">
+                            <a href="products.html" class="btn btn-outline">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                                Continue Shopping
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Order Summary -->
+                    <div class="cart-summary">
+                        <h2>Order Summary</h2>
+
+                        <!-- Coupon Code -->
+                        <div class="coupon-form">
+                            <label>Coupon Code</label>
+                            <div class="coupon-input-group">
+                                <input type="text" placeholder="Enter code" class="form-input">
+                                <button class="btn btn-outline">Apply</button>
+                            </div>
+                        </div>
+
+                        <!-- Summary Details -->
+                        <div class="summary-details">
+                            <div class="summary-row">
+                                <span>Subtotal (4 items)</span>
+                                <span>$37.96</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Discount</span>
+                                <span>$0.00</span>
+                            </div>
+                            <div class="summary-row summary-total">
+                                <span>Total</span>
+                                <span>$37.96</span>
+                            </div>
+                        </div>
+
+                        <!-- Digital Download Notice -->
+                        <div class="digital-notice">
+                            <p>All items are digital downloads. You'll receive instant access after purchase.</p>
+                        </div>
+
+                        <!-- Checkout Button -->
+                        <a href="checkout.html" class="btn btn-primary btn-full">
+                            Proceed to Checkout
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="images/logo-circle.png" alt="Wooddale Digital" class="footer-logo">
+                    <p>Beautiful digital designs for life's most precious moments. Printable templates crafted with love and elegance.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                        </a>
+                        <a href="#" aria-label="Pinterest">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="17" y2="22"/><path d="M5.2 11c.6-5 4.5-8 9.8-8 5.5 0 9 3.5 9 8 0 5-3.5 9-8 9"/></svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="products.html">Shop All</a></li>
+                        <li><a href="categories.html">Categories</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">Wedding Invitations</a></li>
+                        <li><a href="#">Save the Dates</a></li>
+                        <li><a href="#">RSVP Cards</a></li>
+                        <li><a href="#">Thank You Cards</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Wooddale Digital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
