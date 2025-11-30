@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse our collection of beautiful printable planners, checklists, and party supplies. Instant digital downloads for every occasion.">
+    <title>All Products | Wooddale Digital</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo-circle.png" alt="Wooddale Digital Logo" class="logo-image">
+                <span class="logo-text">Wooddale Digital</span>
+            </a>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="products.html" class="nav-link active">Shop</a>
+                <a href="index.html#bestsellers" class="nav-link">Best Sellers</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="4" x2="20" y1="12" y2="12"></line>
+                    <line x1="4" x2="20" y1="6" y2="6"></line>
+                    <line x1="4" x2="20" y1="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <nav class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span class="breadcrumb-separator">/</span>
+                    <span class="breadcrumb-current">All Products</span>
+                </nav>
+                <h1 class="page-title">Shop All Products</h1>
+                <p class="page-description">Discover our beautiful collection of printable planners, checklists, and party supplies</p>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section class="products-section">
+            <div class="container">
+                <div class="products-layout">
+                    <!-- Sidebar Filters -->
+                    <aside class="filters-sidebar">
+                        <div class="filter-group">
+                            <h3 class="filter-title">Categories</h3>
+                            <ul class="filter-list">
+                                <li><a href="#" class="filter-link active">All Products</a></li>
+                                <li><a href="#" class="filter-link">Christmas</a></li>
+                                <li><a href="#" class="filter-link">Party Planning</a></li>
+                                <li><a href="#" class="filter-link">Birthdays</a></li>
+                                <li><a href="#" class="filter-link">Weddings</a></li>
+                                <li><a href="#" class="filter-link">Baby Showers</a></li>
+                                <li><a href="#" class="filter-link">Organization</a></li>
+                            </ul>
+                        </div>
+                        <div class="filter-group">
+                            <h3 class="filter-title">Price Range</h3>
+                            <ul class="filter-list">
+                                <li><label class="filter-checkbox"><input type="checkbox" checked> Under $3</label></li>
+                                <li><label class="filter-checkbox"><input type="checkbox" checked> $3 - $5</label></li>
+                                <li><label class="filter-checkbox"><input type="checkbox"> $5 - $10</label></li>
+                                <li><label class="filter-checkbox"><input type="checkbox"> Over $10</label></li>
+                            </ul>
+                        </div>
+                        <div class="filter-group">
+                            <h3 class="filter-title">Type</h3>
+                            <ul class="filter-list">
+                                <li><label class="filter-checkbox"><input type="checkbox" checked> Checklists</label></li>
+                                <li><label class="filter-checkbox"><input type="checkbox" checked> Planners</label></li>
+                                <li><label class="filter-checkbox"><input type="checkbox" checked> Invitations</label></li>
+                                <li><label class="filter-checkbox"><input type="checkbox"> Bundles</label></li>
+                            </ul>
+                        </div>
+                    </aside>
+
+                    <!-- Products Grid -->
+                    <div class="products-content">
+                        <!-- Toolbar -->
+                        <div class="products-toolbar">
+                            <p class="results-count">Showing <strong>12</strong> of <strong>48</strong> products</p>
+                            <div class="toolbar-actions">
+                                <select class="sort-select">
+                                    <option value="featured">Featured</option>
+                                    <option value="newest">Newest</option>
+                                    <option value="price-low">Price: Low to High</option>
+                                    <option value="price-high">Price: High to Low</option>
+                                    <option value="bestselling">Best Selling</option>
+                                </select>
+                                <div class="view-toggle">
+                                    <button class="view-btn active" aria-label="Grid view">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect width="7" height="7" x="3" y="3" rx="1"></rect>
+                                            <rect width="7" height="7" x="14" y="3" rx="1"></rect>
+                                            <rect width="7" height="7" x="14" y="14" rx="1"></rect>
+                                            <rect width="7" height="7" x="3" y="14" rx="1"></rect>
+                                        </svg>
+                                    </button>
+                                    <button class="view-btn" aria-label="List view">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <line x1="3" x2="21" y1="6" y2="6"></line>
+                                            <line x1="3" x2="21" y1="12" y2="12"></line>
+                                            <line x1="3" x2="21" y1="18" y2="18"></line>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Products Grid -->
+                        <div class="products-grid">
+                            <!-- Product 1 -->
+                            <div class="product-card">
+                                <div class="product-image-container">
+                                    <img src="https://i.etsystatic.com/12518337/r/il/236d64/7500843943/il_340x270.7500843943_66dh.jpg" alt="Christmas Party Guest List" class="product-image">
+                                    <span class="product-badge badge-bestseller">Best Seller</span>
+                                    <div class="product-actions">
+                                        <button class="action-btn wishlist-btn" aria-label="Add to wishlist">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="product-cart-overlay">
+                                        <button class="btn btn-primary btn-sm">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                                                <path d="M3 6h18"></path>
+                                                <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                            </svg>
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <span class="product-category">Christmas</span>
+                                    <h3 class="product-name"><a href="#">Christmas Party Guest List</a></h3>
+                                    <div class="product-price">
+                                        <span class="price-current">$2.97</span>
+                                        <span class="price-original">$3.49</span>
+                                    </div>
+                                    <div class="product-rating">
+                                        <div class="stars">★★★★★</div>
+                                        <span class="rating-text">(Digital Download)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product 2 -->
+                            <div class="product-card">
+                                <div class="product-image-container">
+                                    <img src="https://i.etsystatic.com/12518337/r/il/8860bf/7449261446/il_340x270.7449261446_5fna.jpg" alt="Christmas Gift Wish List" class="product-image">
+                                    <span class="product-badge badge-sale">Sale</span>
+                                    <div class="product-actions">
+                                        <button class="action-btn wishlist-btn" aria-label="Add to wishlist">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="product-cart-overlay">
+                                        <button class="btn btn-primary btn-sm">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                                                <path d="M3 6h18"></path>
+                                                <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                            </svg>
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <span class="product-category">Christmas</span>
+                                    <h3 class="product-name"><a href="#">Christmas Gift Wish List</a></h3>
+                                    <div class="product-price">
+                                        <span class="price-current">$2.97</span>
+                                        <span class="price-original">$3.49</span>
+                                    </div>
+                                    <div class="product-rating">
+                                        <div class="stars">★★★★★</div>
+                                        <span class="rating-text">(Digital Download)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product 3 -->
+                            <div class="product-card">
+                                <div class="product-image-container">
+                                    <img src="https://i.etsystatic.com/12518337/r/il/6585ad/7441527942/il_340x270.7441527942_p9t2.jpg" alt="Christmas Gift Checklist" class="product-image">
+                                    <div class="product-actions">
+                                        <button class="action-btn wishlist-btn" aria-label="Add to wishlist">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="product-cart-overlay">
+                                        <button class="btn btn-primary btn-sm">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                                                <path d="M3 6h18"></path>
+                                                <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                            </svg>
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <span class="product-category">Christmas</span>
+                                    <h3 class="product-name"><a href="#">Christmas Gift Checklist</a></h3>
+                                    <div class="product-price">
+                                        <span class="price-current">$2.97</span>
+                                        <span class="price-original">$3.49</span>
+                                    </div>
+                                    <div class="product-rating">
+                                        <div class="stars">★★★★★</div>
+                                        <span class="rating-text">(Digital Download)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product 4 -->
+                            <div class="product-card">
+                                <div class="product-image-container">
+                                    <img src="https://i.etsystatic.com/12518337/r/il/8cd370/7414673156/il_340x270.7414673156_a8d2.jpg" alt="Hand Drawn Lights Checklist" class="product-image">
+                                    <span class="product-badge badge-new">New</span>
+                                    <div class="product-actions">
+                                        <button class="action-btn wishlist-btn" aria-label="Add to wishlist">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="product-cart-overlay">
+                                        <button class="btn btn-primary btn-sm">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                                                <path d="M3 6h18"></path>
+                                                <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                            </svg>
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <span class="product-category">Christmas</span>
+                                    <h3 class="product-name"><a href="#">Hand Drawn Lights Checklist</a></h3>
+                                    <div class="product-price">
+                                        <span class="price-current">$2.97</span>
+                                        <span class="price-original">$3.49</span>
+                                    </div>
+                                    <div class="product-rating">
+                                        <div class="stars">★★★★★</div>
+                                        <span class="rating-text">(Digital Download)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product 5 -->
+                            <div class="product-card">
+                                <div class="product-image-container">
+                                    <img src="https://i.etsystatic.com/12518337/r/il/236d64/7500843943/il_340x270.7500843943_66dh.jpg" alt="Birthday Party Planner" class="product-image">
+                                    <div class="product-actions">
+                                        <button class="action-btn wishlist-btn" aria-label="Add to wishlist">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="product-cart-overlay">
+                                        <button class="btn btn-primary btn-sm">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                                                <path d="M3 6h18"></path>
+                                                <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                            </svg>
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <span class="product-category">Birthdays</span>
+                                    <h3 class="product-name"><a href="#">Birthday Party Planner</a></h3>
+                                    <div class="product-price">
+                                        <span class="price-current">$3.49</span>
+                                    </div>
+                                    <div class="product-rating">
+                                        <div class="stars">★★★★★</div>
+                                        <span class="rating-text">(Digital Download)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product 6 -->
+                            <div class="product-card">
+                                <div class="product-image-container">
+                                    <img src="https://i.etsystatic.com/12518337/r/il/8860bf/7449261446/il_340x270.7449261446_5fna.jpg" alt="Wedding Planning Checklist" class="product-image">
+                                    <span class="product-badge badge-bestseller">Best Seller</span>
+                                    <div class="product-actions">
+                                        <button class="action-btn wishlist-btn" aria-label="Add to wishlist">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="product-cart-overlay">
+                                        <button class="btn btn-primary btn-sm">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                                                <path d="M3 6h18"></path>
+                                                <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                            </svg>
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <span class="product-category">Weddings</span>
+                                    <h3 class="product-name"><a href="#">Wedding Planning Checklist</a></h3>
+                                    <div class="product-price">
+                                        <span class="price-current">$4.97</span>
+                                        <span class="price-original">$5.99</span>
+                                    </div>
+                                    <div class="product-rating">
+                                        <div class="stars">★★★★★</div>
+                                        <span class="rating-text">(Digital Download)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product 7 -->
+                            <div class="product-card">
+                                <div class="product-image-container">
+                                    <img src="https://i.etsystatic.com/12518337/r/il/6585ad/7441527942/il_340x270.7441527942_p9t2.jpg" alt="Baby Shower Games Bundle" class="product-image">
+                                    <span class="product-badge badge-sale">Sale</span>
+                                    <div class="product-actions">
+                                        <button class="action-btn wishlist-btn" aria-label="Add to wishlist">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="product-cart-overlay">
+                                        <button class="btn btn-primary btn-sm">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                                                <path d="M3 6h18"></path>
+                                                <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                            </svg>
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <span class="product-category">Baby Showers</span>
+                                    <h3 class="product-name"><a href="#">Baby Shower Games Bundle</a></h3>
+                                    <div class="product-price">
+                                        <span class="price-current">$5.97</span>
+                                        <span class="price-original">$7.99</span>
+                                    </div>
+                                    <div class="product-rating">
+                                        <div class="stars">★★★★★</div>
+                                        <span class="rating-text">(Digital Download)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product 8 -->
+                            <div class="product-card">
+                                <div class="product-image-container">
+                                    <img src="https://i.etsystatic.com/12518337/r/il/8cd370/7414673156/il_340x270.7414673156_a8d2.jpg" alt="Daily Planner Printable" class="product-image">
+                                    <div class="product-actions">
+                                        <button class="action-btn wishlist-btn" aria-label="Add to wishlist">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="product-cart-overlay">
+                                        <button class="btn btn-primary btn-sm">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                                                <path d="M3 6h18"></path>
+                                                <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                            </svg>
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <span class="product-category">Organization</span>
+                                    <h3 class="product-name"><a href="#">Daily Planner Printable</a></h3>
+                                    <div class="product-price">
+                                        <span class="price-current">$2.49</span>
+                                    </div>
+                                    <div class="product-rating">
+                                        <div class="stars">★★★★★</div>
+                                        <span class="rating-text">(Digital Download)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pagination -->
+                        <nav class="pagination">
+                            <a href="#" class="pagination-btn pagination-prev disabled">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="m15 18-6-6 6-6"></path>
+                                </svg>
+                                Previous
+                            </a>
+                            <div class="pagination-numbers">
+                                <a href="#" class="pagination-number active">1</a>
+                                <a href="#" class="pagination-number">2</a>
+                                <a href="#" class="pagination-number">3</a>
+                                <span class="pagination-ellipsis">...</span>
+                                <a href="#" class="pagination-number">6</a>
+                            </div>
+                            <a href="#" class="pagination-btn pagination-next">
+                                Next
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="m9 18 6-6-6-6"></path>
+                                </svg>
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo-circle.png" alt="Wooddale Digital Logo" class="logo-image">
+                        <span class="logo-text">Wooddale Digital</span>
+                    </a>
+                    <p class="footer-description">Beautiful printable planners and party supplies to help you organize life's special moments.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Pinterest">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="12" x2="12" y1="17" y2="22"></line>
+                                <path d="M5 17h14v-1.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V6h1a2 2 0 0 0 0-4H8a2 2 0 0 0 0 4h1v4.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24Z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Shop All</a></li>
+                        <li><a href="index.html#bestsellers">Best Sellers</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">Christmas</a></li>
+                        <li><a href="#">Party Planning</a></li>
+                        <li><a href="#">Birthdays</a></li>
+                        <li><a href="#">Weddings</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Wooddale Digital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
