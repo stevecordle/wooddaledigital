@@ -3263,3 +3263,142 @@ button {
     flex-direction: row;
   }
 }
+
+/* ================================
+   FAQ Page Styles
+   ================================ */
+
+.faq-section {
+  padding: 3rem 0 4rem;
+}
+
+@media (min-width: 768px) {
+  .faq-section {
+    padding: 4rem 0 5rem;
+  }
+}
+
+.faq-container {
+  max-width: 48rem;
+}
+
+.faq-category {
+  margin-bottom: 2.5rem;
+}
+
+.faq-category:last-child {
+  margin-bottom: 0;
+}
+
+.faq-category-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+@media (min-width: 768px) {
+  .faq-category-title {
+    font-size: 1.5rem;
+  }
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.faq-item {
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  padding: 0;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.faq-item[open] {
+  background-color: hsla(30, 30%, 96%, 0.3);
+}
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  font-weight: 500;
+  cursor: pointer;
+  list-style: none;
+  transition: color 0.2s ease;
+}
+
+.faq-question::-webkit-details-marker {
+  display: none;
+}
+
+.faq-question::after {
+  content: '+';
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--muted-foreground);
+  transition: transform 0.2s ease;
+}
+
+.faq-item[open] .faq-question::after {
+  content: '−';
+}
+
+.faq-question:hover {
+  color: var(--primary);
+}
+
+.faq-answer {
+  padding: 0 1.25rem 1rem;
+  color: var(--muted-foreground);
+  line-height: 1.7;
+}
+
+.faq-answer p {
+  margin: 0;
+}
+
+/* FAQ CTA Section */
+.faq-cta-section {
+  padding: 4rem 0;
+  background-color: hsla(30, 30%, 96%, 0.3);
+}
+
+.faq-cta-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: hsla(345, 28%, 42%, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  color: var(--primary);
+}
+
+.faq-cta-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .faq-cta-title {
+    font-size: 1.875rem;
+  }
+}
+
+.faq-cta-description {
+  color: var(--muted-foreground);
+  margin-bottom: 1.5rem;
+  max-width: 32rem;
+  margin-left: auto;
+  margin-right: auto;
+}
