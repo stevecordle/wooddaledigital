@@ -3015,3 +3015,251 @@ button {
     flex-direction: row;
   }
 }
+
+/* ================================
+   About Page Styles
+   ================================ */
+
+.about-story-section {
+  padding: 3rem 0 4rem;
+}
+
+@media (min-width: 768px) {
+  .about-story-section {
+    padding: 4rem 0 5rem;
+  }
+}
+
+.about-story-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .about-story-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+}
+
+.about-image-wrapper {
+  position: relative;
+}
+
+.about-image-placeholder {
+  aspect-ratio: 4/5;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, hsla(345, 28%, 42%, 0.1), hsla(160, 22%, 52%, 0.1));
+  overflow: hidden;
+}
+
+.about-image-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.about-icon-circle {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: hsla(345, 28%, 42%, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.about-established {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  color: var(--foreground);
+}
+
+.about-deco-circle-1 {
+  position: absolute;
+  bottom: -1rem;
+  right: -1rem;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background-color: hsla(18, 65%, 78%, 0.3);
+  z-index: -1;
+}
+
+.about-deco-circle-2 {
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: hsla(160, 22%, 52%, 0.2);
+  z-index: -1;
+}
+
+.about-story-content {
+  max-width: 100%;
+}
+
+.about-greeting {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .about-greeting {
+    font-size: 1.875rem;
+  }
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: var(--muted-foreground);
+  line-height: 1.7;
+}
+
+.about-signature {
+  font-weight: 500;
+  color: var(--foreground);
+}
+
+/* Values Section */
+.about-values-section {
+  padding: 4rem 0;
+  background-color: hsla(30, 30%, 96%, 0.3);
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .values-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.value-card {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+}
+
+.value-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 0.75rem;
+  background-color: hsla(345, 28%, 42%, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  color: var(--primary);
+}
+
+.value-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--foreground);
+  margin-bottom: 0.5rem;
+}
+
+.value-description {
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+  line-height: 1.5;
+}
+
+/* About CTA Section */
+.about-cta-section {
+  padding: 3rem 0 4rem;
+}
+
+@media (min-width: 768px) {
+  .about-cta-section {
+    padding: 4rem 0 5rem;
+  }
+}
+
+.about-cta-card {
+  background: linear-gradient(135deg, hsla(345, 28%, 42%, 0.05), hsla(160, 22%, 52%, 0.05));
+  border-radius: 1.5rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .about-cta-card {
+    padding: 3rem;
+  }
+}
+
+.about-cta-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: hsla(345, 28%, 42%, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  color: var(--primary);
+}
+
+.about-cta-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .about-cta-title {
+    font-size: 1.875rem;
+  }
+}
+
+.about-cta-description {
+  color: var(--muted-foreground);
+  margin-bottom: 1.5rem;
+  max-width: 32rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-cta-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+}
+
+@media (min-width: 640px) {
+  .about-cta-buttons {
+    flex-direction: row;
+  }
+}
