@@ -4125,3 +4125,128 @@ button {
 .btn-sm svg {
   margin-right: 0.5rem;
 }
+
+/* ================================
+   404 Not Found Page
+   ================================ */
+
+.not-found-page {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1rem;
+  min-height: calc(100vh - 200px);
+}
+
+.not-found-content {
+  text-align: center;
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+.not-found-number {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 8rem;
+  font-weight: 700;
+  color: hsla(345, 28%, 42%, 0.2);
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.not-found-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.75rem;
+  color: var(--foreground);
+  margin-bottom: 1rem;
+}
+
+.not-found-message {
+  color: var(--muted-foreground);
+  margin-bottom: 2rem;
+  max-width: 28rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.not-found-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+.not-found-links-section {
+  border-top: 1px solid var(--border);
+  padding-top: 2rem;
+}
+
+.not-found-links-label {
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+  margin-bottom: 1.5rem;
+}
+
+.not-found-links-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.not-found-link-card {
+  padding: 1rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--card);
+  text-decoration: none;
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.not-found-link-card:hover {
+  border-color: hsla(345, 28%, 42%, 0.5);
+  box-shadow: var(--shadow-soft);
+}
+
+.not-found-link-card svg {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  transition: transform 0.2s;
+}
+
+.not-found-link-card:hover svg {
+  transform: scale(1.1);
+}
+
+.not-found-link-title {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--foreground);
+  transition: color 0.2s;
+}
+
+.not-found-link-card:hover .not-found-link-title {
+  color: var(--primary);
+}
+
+.not-found-link-desc {
+  font-size: 0.75rem;
+  color: var(--muted-foreground);
+  margin-top: 0.25rem;
+}
+
+@media (min-width: 768px) {
+  .not-found-number {
+    font-size: 10rem;
+  }
+  
+  .not-found-title {
+    font-size: 2rem;
+  }
+  
+  .not-found-links-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
