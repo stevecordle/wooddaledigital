@@ -90,26 +90,22 @@ const AboutPage = () => {
               
               <div>
                 <h2 className="font-heading text-2xl md:text-3xl font-medium mb-6">
-                  Hello, I'm Sarah!
+                  Our Mission
                 </h2>
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    Welcome to Wooddale Digital! I'm a designer and mom based in the beautiful Pacific Northwest, 
-                    passionate about creating printables that make life's celebrations a little more special.
+                    Wooddale Digital creates beautiful, professionally designed printables that help 
+                    you celebrate life's special moments with style and ease.
                   </p>
                   <p>
-                    What started as designing invitations for my daughter's birthday party has grown into a 
-                    full collection of printables for every occasion. From baby showers to weddings, 
-                    holiday celebrations to everyday organization—I love helping people add a personal 
-                    touch to their events.
+                    Our collection includes everything from party invitations and event planners to 
+                    holiday checklists and organizational tools. Each design is crafted to be both 
+                    beautiful and functional—ready to customize and print in minutes.
                   </p>
                   <p>
-                    Every design is created with love and attention to detail. I believe that beautiful, 
-                    professional-quality printables should be accessible to everyone, which is why I offer 
-                    instant digital downloads at affordable prices.
-                  </p>
-                  <p className="font-medium text-foreground">
-                    Thank you for being here. I can't wait to be part of your next celebration!
+                    We believe professional-quality designs should be accessible to everyone. That's 
+                    why we offer instant digital downloads at affordable prices, with easy-to-use 
+                    fillable PDF templates that work on any device.
                   </p>
                 </div>
               </div>
@@ -157,7 +153,7 @@ const AboutPage = () => {
               </h2>
               <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
                 Have questions about our products or need help with printing? 
-                I'd love to hear from you!
+                We'd love to hear from you.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
