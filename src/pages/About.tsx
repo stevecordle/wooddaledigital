@@ -89,9 +89,9 @@ const AboutPage = () => {
               </div>
               
               <div>
-                <h2 className="font-heading text-2xl md:text-3xl font-medium mb-6">
-                  Our Mission
-                </h2>
+              <h2 className="font-heading text-2xl md:text-3xl font-medium mb-6">
+                About
+              </h2>
                 <div className="space-y-4 text-muted-foreground">
                   <p>
                     Wooddale Digital creates beautiful, professionally designed printables that help 
