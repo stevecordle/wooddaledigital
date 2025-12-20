@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X, ShoppingBag, Search, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logoCircle from "@/assets/logo-circle.png";
+import logo from "@/assets/wooddale-digital-logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,20 +27,12 @@ const Header = () => {
           </button>
 
           {/* Logo */}
-          <a href="/" className="flex items-center gap-3 group">
+          <a href="/" className="flex items-center group">
             <img 
-              src={logoCircle} 
+              src={logo} 
               alt="Wooddale Digital" 
-              className="w-10 h-10 md:w-12 md:h-12 rounded-full transition-transform duration-300 group-hover:scale-105"
+              className="h-8 md:h-10 w-auto transition-transform duration-300 group-hover:scale-105"
             />
-            <div className="hidden sm:block">
-              <span className="font-heading text-lg md:text-xl font-medium text-foreground tracking-wide">
-                WOODDALE
-              </span>
-              <span className="font-script text-primary text-base md:text-lg ml-1">
-                digital
-              </span>
-            </div>
           </a>
 
           {/* Desktop Navigation */}
