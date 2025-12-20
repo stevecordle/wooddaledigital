@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import { Heart, ShoppingCart, ChevronRight, Minus, Plus, Download, FileText, Share2 } from "lucide-react";
+import { Heart, ExternalLink, ChevronRight, Download, FileText, Share2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -32,7 +32,8 @@ const product = {
     "/placeholder.svg",
     "/placeholder.svg"
   ],
-  badge: "Best Seller"
+  badge: "Best Seller",
+  etsyUrl: "https://www.etsy.com/shop/WooddaleDigital"
 };
 
 const relatedProducts = [
@@ -69,7 +70,6 @@ const relatedProducts = [
 const ProductDetail = () => {
   const { id } = useParams();
   const [selectedImage, setSelectedImage] = useState(0);
-  const [quantity, setQuantity] = useState(1);
 
   return (
     <div className="min-h-screen bg-background">
@@ -147,39 +147,20 @@ const ProductDetail = () => {
 
               <p className="text-muted-foreground leading-relaxed">{product.description}</p>
 
-              {/* Quantity & Add to Cart */}
-              <div className="space-y-4">
-                <div className="flex items-center gap-4">
-                  <span className="text-sm font-medium">Quantity:</span>
-                  <div className="flex items-center border border-border rounded-lg">
-                    <button 
-                      onClick={() => setQuantity(Math.max(1, quantity - 1))}
-                      className="p-2 hover:bg-muted transition-colors"
-                    >
-                      <Minus className="w-4 h-4" />
-                    </button>
-                    <span className="w-12 text-center">{quantity}</span>
-                    <button 
-                      onClick={() => setQuantity(quantity + 1)}
-                      className="p-2 hover:bg-muted transition-colors"
-                    >
-                      <Plus className="w-4 h-4" />
-                    </button>
-                  </div>
-                </div>
-
-                <div className="flex gap-3">
-                  <Button variant="default" size="lg" className="flex-1">
-                    <ShoppingCart className="w-5 h-5 mr-2" />
-                    Add to Cart
-                  </Button>
-                  <Button variant="outline" size="lg">
-                    <Heart className="w-5 h-5" />
-                  </Button>
-                  <Button variant="outline" size="lg">
-                    <Share2 className="w-5 h-5" />
-                  </Button>
-                </div>
+              {/* Shop on Etsy */}
+              <div className="flex gap-3">
+                <Button asChild variant="default" size="lg" className="flex-1">
+                  <a href={product.etsyUrl} target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="w-5 h-5 mr-2" />
+                    Shop on Etsy
+                  </a>
+                </Button>
+                <Button variant="outline" size="lg">
+                  <Heart className="w-5 h-5" />
+                </Button>
+                <Button variant="outline" size="lg">
+                  <Share2 className="w-5 h-5" />
+                </Button>
               </div>
 
               {/* Digital Download Info */}
