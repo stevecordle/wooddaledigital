@@ -48,11 +48,11 @@ const Footer = () => {
 
   const socialLinks = [
     { name: "Etsy", icon: EtsyIcon, href: "https://www.etsy.com/shop/wooddaledigital" },
-    { name: "Facebook", icon: Facebook, href: "https://www.facebook.com/profile.php?id=61583825485646" },
-    { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/wooddaledigital/" },
     { name: "Pinterest", icon: PinterestIcon, href: "https://www.pinterest.com/wooddaledigital/" },
-    { name: "YouTube", icon: Youtube, href: "https://www.youtube.com/channel/UCwilyUFNRxpfTkz_V8nit7A" },
+    { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/wooddaledigital/" },
     { name: "TikTok", icon: TikTokIcon, href: "https://www.tiktok.com/@wooddaledigital" },
+    { name: "Facebook", icon: Facebook, href: "https://www.facebook.com/profile.php?id=61583825485646" },
+    { name: "YouTube", icon: Youtube, href: "https://www.youtube.com/channel/UCwilyUFNRxpfTkz_V8nit7A" },
   ];
 
   return (
