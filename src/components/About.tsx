@@ -1,12 +1,17 @@
 import { Button } from "@/components/ui/button";
 import { Check, Heart } from "lucide-react";
 import { useState, useEffect } from "react";
+import logo from "@/assets/wooddale-digital-logo.png";
 
 const productImages = [
   "https://i.etsystatic.com/12518337/r/il/236d64/7500843943/il_340x270.7500843943_66dh.jpg",
   "https://i.etsystatic.com/12518337/r/il/8860bf/7449261446/il_340x270.7449261446_5fna.jpg",
   "https://i.etsystatic.com/12518337/r/il/6585ad/7441527942/il_340x270.7441527942_p9t2.jpg",
   "https://i.etsystatic.com/12518337/r/il/8cd370/7414673156/il_340x270.7414673156_a8d2.jpg",
+  "https://i.etsystatic.com/12518337/r/il/5a3a8b/7452816580/il_340x270.7452816580_5fna.jpg",
+  "https://i.etsystatic.com/12518337/r/il/2a3b3c/7500847921/il_340x270.7500847921_66dh.jpg",
+  "https://i.etsystatic.com/12518337/r/il/4b5c6d/7449265424/il_340x270.7449265424_5fna.jpg",
+  "https://i.etsystatic.com/12518337/r/il/7e8f9g/7441531920/il_340x270.7441531920_p9t2.jpg",
 ];
 
 const features = [
@@ -44,13 +49,22 @@ const About = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-peach/30 via-muted to-sage/20 rounded-3xl transform rotate-3" />
               <div className="absolute inset-0 bg-gradient-to-tl from-primary/10 to-transparent rounded-3xl transform -rotate-3" />
               
-              {/* Main Image */}
-              <div className="relative bg-card rounded-3xl p-4 shadow-elevated flex items-center justify-center overflow-hidden">
+              {/* Main Content */}
+              <div className="relative bg-card rounded-3xl p-4 shadow-elevated flex flex-col items-center justify-start overflow-hidden h-full">
+                {/* Logo at top */}
                 <img 
-                  src={productImages[currentImageIndex]} 
-                  alt="Featured product from Wooddale Digital" 
-                  className="w-full h-full object-cover rounded-2xl transition-opacity duration-500"
+                  src={logo} 
+                  alt="Wooddale Digital" 
+                  className="w-32 mb-4 mt-2"
                 />
+                {/* Rotating product image */}
+                <div className="flex-1 w-full overflow-hidden rounded-2xl">
+                  <img 
+                    src={productImages[currentImageIndex]} 
+                    alt="Featured product from Wooddale Digital" 
+                    className="w-full h-full object-cover transition-opacity duration-500"
+                  />
+                </div>
               </div>
               
               {/* Floating Badge */}
