@@ -1,6 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Check, Heart } from "lucide-react";
-import logo from "@/assets/wooddale-digital-logo.png";
+import { useState, useEffect } from "react";
+
+const productImages = [
+  "https://i.etsystatic.com/12518337/r/il/236d64/7500843943/il_340x270.7500843943_66dh.jpg",
+  "https://i.etsystatic.com/12518337/r/il/8860bf/7449261446/il_340x270.7449261446_5fna.jpg",
+  "https://i.etsystatic.com/12518337/r/il/6585ad/7441527942/il_340x270.7441527942_p9t2.jpg",
+  "https://i.etsystatic.com/12518337/r/il/8cd370/7414673156/il_340x270.7414673156_a8d2.jpg",
+];
 
 const features = [
   "Fillable PDF templates",
@@ -12,6 +19,20 @@ const features = [
 ];
 
 const About = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    // Start with a random image
+    setCurrentImageIndex(Math.floor(Math.random() * productImages.length));
+    
+    // Rotate through images every 3 seconds
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % productImages.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section id="about" className="section-padding bg-background">
       <div className="container-narrow">
@@ -24,11 +45,11 @@ const About = () => {
               <div className="absolute inset-0 bg-gradient-to-tl from-primary/10 to-transparent rounded-3xl transform -rotate-3" />
               
               {/* Main Image */}
-              <div className="relative bg-card rounded-3xl p-8 shadow-elevated flex items-center justify-center">
+              <div className="relative bg-card rounded-3xl p-4 shadow-elevated flex items-center justify-center overflow-hidden">
                 <img 
-                  src={logo} 
-                  alt="Wooddale Digital" 
-                  className="w-full max-w-xs animate-float"
+                  src={productImages[currentImageIndex]} 
+                  alt="Featured product from Wooddale Digital" 
+                  className="w-full h-full object-cover rounded-2xl transition-opacity duration-500"
                 />
               </div>
               
