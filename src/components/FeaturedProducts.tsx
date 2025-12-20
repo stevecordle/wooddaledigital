@@ -1,4 +1,4 @@
-import { Heart, ShoppingBag, Star } from "lucide-react";
+import { Heart, ShoppingBag } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -112,12 +112,7 @@ const FeaturedProducts = () => {
                     <span className="text-sm text-muted-foreground line-through">${product.originalPrice.toFixed(2)}</span>
                   )}
                 </div>
-                <div className="flex items-center gap-1 mt-2">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-3 h-3 fill-peach text-peach" />
-                  ))}
-                  <span className="text-xs text-muted-foreground ml-1">(Digital Download)</span>
-                </div>
+                <p className="text-xs text-muted-foreground mt-2">Digital Download</p>
               </div>
             </div>
           ))}

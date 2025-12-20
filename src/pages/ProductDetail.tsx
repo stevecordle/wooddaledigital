@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import { Heart, ShoppingCart, Star, ChevronRight, Minus, Plus, Download, FileText, Share2 } from "lucide-react";
+import { Heart, ShoppingCart, ChevronRight, Minus, Plus, Download, FileText, Share2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -11,8 +11,6 @@ const product = {
   category: "Wedding Invitations",
   price: 12.99,
   originalPrice: 24.99,
-  rating: 4.9,
-  reviews: 128,
   description: "Create the perfect first impression for your special day with this elegant romantic floral wedding invitation suite. Features delicate watercolor florals in soft blush and sage tones, perfect for a romantic garden wedding.",
   features: [
     "Fully editable in Canva (free version)",
@@ -43,32 +41,28 @@ const relatedProducts = [
     name: "Minimalist Save the Date",
     price: 8.99,
     originalPrice: 14.99,
-    image: "https://i.etsystatic.com/25712066/r/il/2a2a2a/3456789011/il_794xN.3456789011_wxyz.jpg",
-    rating: 4.8
+    image: "https://i.etsystatic.com/25712066/r/il/2a2a2a/3456789011/il_794xN.3456789011_wxyz.jpg"
   },
   {
     id: 3,
     name: "Boho Wedding Menu Template",
     price: 6.99,
     originalPrice: 12.99,
-    image: "https://i.etsystatic.com/25712066/r/il/3b3b3b/3456789012/il_794xN.3456789012_mnop.jpg",
-    rating: 4.7
+    image: "https://i.etsystatic.com/25712066/r/il/3b3b3b/3456789012/il_794xN.3456789012_mnop.jpg"
   },
   {
     id: 4,
     name: "Elegant Table Numbers",
     price: 5.99,
     originalPrice: 9.99,
-    image: "https://i.etsystatic.com/25712066/r/il/4c4c4c/3456789013/il_794xN.3456789013_qrst.jpg",
-    rating: 4.9
+    image: "https://i.etsystatic.com/25712066/r/il/4c4c4c/3456789013/il_794xN.3456789013_qrst.jpg"
   },
   {
     id: 5,
     name: "Floral Welcome Sign",
     price: 9.99,
     originalPrice: 16.99,
-    image: "https://i.etsystatic.com/25712066/r/il/5d5d5d/3456789014/il_794xN.3456789014_uvwx.jpg",
-    rating: 4.8
+    image: "https://i.etsystatic.com/25712066/r/il/5d5d5d/3456789014/il_794xN.3456789014_uvwx.jpg"
   }
 ];
 
@@ -141,19 +135,6 @@ const ProductDetail = () => {
                 <p className="text-sm text-muted-foreground mb-2">{product.category}</p>
                 <h1 className="font-display text-3xl md:text-4xl text-foreground mb-4">{product.name}</h1>
                 
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="flex items-center gap-1">
-                    {[...Array(5)].map((_, i) => (
-                      <Star 
-                        key={i} 
-                        className={`w-5 h-5 ${i < Math.floor(product.rating) ? 'fill-amber-400 text-amber-400' : 'text-muted'}`}
-                      />
-                    ))}
-                  </div>
-                  <span className="text-sm text-muted-foreground">
-                    {product.rating} ({product.reviews} reviews)
-                  </span>
-                </div>
 
                 <div className="flex items-baseline gap-3">
                   <span className="text-3xl font-bold text-primary">${product.price}</span>
