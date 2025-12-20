@@ -1,5 +1,6 @@
 import { Heart, ShoppingBag, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const products = [
   {
@@ -65,7 +66,7 @@ const FeaturedProducts = () => {
               className="group bg-card rounded-2xl overflow-hidden border border-border card-hover"
             >
               {/* Image Container */}
-              <div className="relative aspect-square overflow-hidden bg-muted">
+              <Link to={`/product/${product.id}`} className="relative aspect-square overflow-hidden bg-muted block">
                 <img
                   src={product.image}
                   alt={product.name}
@@ -97,7 +98,7 @@ const FeaturedProducts = () => {
                     Add to Cart
                   </Button>
                 </div>
-              </div>
+              </Link>
 
               {/* Content */}
               <div className="p-4">
