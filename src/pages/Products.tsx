@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Search, Grid3X3, List, Heart, ShoppingCart, Star, ChevronLeft, ChevronRight } from "lucide-react";
+import { Search, Grid3X3, List, Heart, ShoppingCart, ChevronLeft, ChevronRight } from "lucide-react";
 
 const categories = [
   { name: "All Products", count: 156 },
@@ -19,8 +19,6 @@ const products = [
     price: 8.99,
     originalPrice: 12.99,
     image: "https://i.etsystatic.com/27698741/r/il/d5b33a/3012178889/il_570xN.3012178889_1234.jpg",
-    rating: 5,
-    reviews: 234,
     badge: "Best Seller",
   },
   {
@@ -28,8 +26,6 @@ const products = [
     name: "Boho Baby Shower Bundle",
     price: 14.99,
     image: "https://i.etsystatic.com/27698741/r/il/a5c2b1/3059667080/il_570xN.3059667080_5678.jpg",
-    rating: 5,
-    reviews: 189,
     badge: "New",
   },
   {
@@ -38,24 +34,18 @@ const products = [
     price: 24.99,
     originalPrice: 34.99,
     image: "https://i.etsystatic.com/27698741/r/il/b8d4e2/3106155271/il_570xN.3106155271_9012.jpg",
-    rating: 5,
-    reviews: 156,
   },
   {
     id: 4,
     name: "Garden Party Invitation",
     price: 7.99,
     image: "https://i.etsystatic.com/27698741/r/il/c9e5f3/3152643462/il_570xN.3152643462_3456.jpg",
-    rating: 4,
-    reviews: 98,
   },
   {
     id: 5,
     name: "Rustic Bridal Shower Set",
     price: 12.99,
     image: "https://i.etsystatic.com/27698741/r/il/d0f6g4/3199131653/il_570xN.3199131653_7890.jpg",
-    rating: 5,
-    reviews: 145,
     badge: "Popular",
   },
   {
@@ -63,8 +53,6 @@ const products = [
     name: "Minimalist Thank You Cards",
     price: 5.99,
     image: "https://i.etsystatic.com/27698741/r/il/e1g7h5/3245619844/il_570xN.3245619844_1234.jpg",
-    rating: 5,
-    reviews: 312,
   },
   {
     id: 7,
@@ -72,16 +60,12 @@ const products = [
     price: 6.99,
     originalPrice: 9.99,
     image: "https://i.etsystatic.com/27698741/r/il/f2h8i6/3292108035/il_570xN.3292108035_5678.jpg",
-    rating: 4,
-    reviews: 87,
   },
   {
     id: 8,
     name: "Vintage Birthday Bundle",
     price: 18.99,
     image: "https://i.etsystatic.com/27698741/r/il/g3i9j7/3338596226/il_570xN.3338596226_9012.jpg",
-    rating: 5,
-    reviews: 203,
     badge: "Best Seller",
   },
 ];
@@ -245,15 +229,7 @@ const Products = () => {
                         <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors line-clamp-2">
                           {product.name}
                         </h3>
-                        <div className="flex items-center gap-1 mt-2">
-                          {[...Array(5)].map((_, i) => (
-                            <Star
-                              key={i}
-                              className={`w-3.5 h-3.5 ${i < product.rating ? "fill-amber-400 text-amber-400" : "text-muted"}`}
-                            />
-                          ))}
-                          <span className="text-xs text-muted-foreground ml-1">({product.reviews})</span>
-                        </div>
+                        <p className="text-xs text-muted-foreground mt-2">Digital Download</p>
                         <div className="flex items-center gap-2 mt-3">
                           <span className="text-lg font-bold text-primary">${product.price}</span>
                           {product.originalPrice && (
