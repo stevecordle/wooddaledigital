@@ -57,7 +57,7 @@ const Hero = () => {
           {/* Trust Badges */}
           <div className="flex flex-wrap items-center justify-center gap-6 mt-16 pt-8 border-t border-primary-foreground/20 animate-fade-in-delay-2">
             <div className="text-center">
-              <div className="text-2xl font-heading font-semibold">High-Resolution</div>
+              <div className="text-2xl font-heading font-semibold">High-Res</div>
               <div className="text-sm text-primary-foreground/70">Digital Files</div>
             </div>
             <div className="w-px h-10 bg-primary-foreground/30 hidden sm:block" />
