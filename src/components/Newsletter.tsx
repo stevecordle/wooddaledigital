@@ -29,10 +29,10 @@ const Newsletter = () => {
           </div>
 
           <h2 className="font-heading text-3xl md:text-4xl font-medium mb-4">
-            Get 15% Off Your First Order
+            Keep in Touch!
           </h2>
           <p className="text-muted-foreground mb-8">
-            Subscribe to our newsletter for exclusive discounts, new designs, and celebration inspiration.
+            Subscribe to our newsletter for new designs, updates, and celebration inspiration.
           </p>
 
           {/* Form */}
