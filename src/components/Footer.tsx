@@ -1,5 +1,5 @@
 import { Instagram, Facebook, Mail, Heart } from "lucide-react";
-import logoCircle from "@/assets/logo-circle.png";
+import logo from "@/assets/wooddale-digital-logo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -40,9 +40,9 @@ const Footer = () => {
           <div className="col-span-2 md:col-span-4 lg:col-span-1">
             <a href="/" className="inline-flex items-center gap-3 mb-4">
               <img 
-                src={logoCircle} 
+                src={logo} 
                 alt="Wooddale Digital" 
-                className="w-12 h-12 rounded-full"
+                className="h-10 w-auto brightness-0 invert"
               />
             </a>
             <p className="text-background/70 text-sm leading-relaxed mb-4">

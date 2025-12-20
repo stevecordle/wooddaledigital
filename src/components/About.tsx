@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Check, Heart } from "lucide-react";
-import logoCircle from "@/assets/logo-circle.png";
+import logo from "@/assets/wooddale-digital-logo.png";
 
 const features = [
   "Fillable PDF templates",
@@ -26,9 +26,9 @@ const About = () => {
               {/* Main Image */}
               <div className="relative bg-card rounded-3xl p-8 shadow-elevated flex items-center justify-center">
                 <img 
-                  src={logoCircle} 
+                  src={logo} 
                   alt="Wooddale Digital" 
-                  className="w-full max-w-xs rounded-full shadow-card animate-float"
+                  className="w-full max-w-xs animate-float"
                 />
               </div>
               
