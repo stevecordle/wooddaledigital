@@ -15,6 +15,13 @@ const TikTokIcon = ({ className }: { className?: string }) => (
   </svg>
 );
 
+// Custom Etsy icon
+const EtsyIcon = ({ className }: { className?: string }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+    <path d="M8.559 4.674c0-.312.044-.519.152-.59.108-.071.376-.112.794-.112h2.396c1.424 0 2.467.219 3.121.655.654.436 1.076 1.206 1.265 2.31l.167.937h.722l-.085-4.811h-.669l-.403.906c-.101.227-.193.39-.276.486s-.195.157-.339.183c-.143.026-.587.052-1.332.078-.744.026-1.753.039-3.027.039H6.168l-.039 1.136c.464.026.786.058.966.099.18.04.318.119.414.237.097.117.163.262.2.434.036.172.054.452.054.841v10.697c0 .389-.019.669-.058.841-.039.171-.107.316-.208.433-.101.118-.241.197-.421.237-.18.041-.495.073-.944.099l.039 1.136h5.947c1.449 0 2.637.013 3.563.039.927.026 1.475.052 1.646.078.17.026.299.087.385.183.087.097.166.259.238.486l.356.906h.669l.26-5.218h-.695l-.234 1.11c-.202 1.065-.588 1.792-1.159 2.181-.571.39-1.476.584-2.718.584H9.392c-.364 0-.601-.041-.71-.125-.109-.083-.163-.26-.163-.533V12.39h3.027c.563 0 .969.062 1.219.186.25.124.42.313.511.569.091.255.147.616.169 1.084l.039.919h.842V9.874h-.842l-.039.906c-.022.468-.08.824-.173 1.071-.094.246-.27.43-.529.553-.26.122-.673.183-1.238.183H8.559V4.674z"/>
+  </svg>
+);
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -40,6 +47,7 @@ const Footer = () => {
   };
 
   const socialLinks = [
+    { name: "Etsy", icon: EtsyIcon, href: "https://www.etsy.com/shop/wooddaledigital" },
     { name: "Facebook", icon: Facebook, href: "https://www.facebook.com/profile.php?id=61583825485646" },
     { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/wooddaledigital/" },
     { name: "Pinterest", icon: PinterestIcon, href: "https://www.pinterest.com/wooddaledigital/" },
