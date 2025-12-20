@@ -1,16 +1,16 @@
 import { useState } from "react";
 import { Menu, X, ShoppingBag, Search, Heart } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import logo from "@/assets/wooddale-digital-logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: "Shop All", href: "#shop" },
-    { name: "Categories", href: "#categories" },
-    { name: "Best Sellers", href: "#bestsellers" },
-    { name: "About", href: "#about" },
+    { name: "Shop All", href: "/products" },
+    { name: "Categories", href: "/categories" },
+    { name: "About", href: "/about" },
+    { name: "FAQ", href: "/faq" },
   ];
 
   return (
@@ -27,24 +27,24 @@ const Header = () => {
           </button>
 
           {/* Logo */}
-          <a href="/" className="flex items-center group">
+          <Link to="/" className="flex items-center group">
             <img 
               src={logo} 
               alt="Wooddale Digital" 
               className="h-8 md:h-10 w-auto transition-transform duration-300 group-hover:scale-105"
             />
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
-                href={link.href}
+                to={link.href}
                 className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
           </nav>
 
@@ -53,15 +53,15 @@ const Header = () => {
             <button className="p-2 hover:bg-muted rounded-full transition-colors" aria-label="Search">
               <Search className="w-5 h-5 text-muted-foreground" />
             </button>
-            <button className="p-2 hover:bg-muted rounded-full transition-colors hidden sm:flex" aria-label="Favorites">
+            <Link to="/favorites" className="p-2 hover:bg-muted rounded-full transition-colors hidden sm:flex" aria-label="Favorites">
               <Heart className="w-5 h-5 text-muted-foreground" />
-            </button>
-            <button className="p-2 hover:bg-muted rounded-full transition-colors relative" aria-label="Cart">
+            </Link>
+            <Link to="/cart" className="p-2 hover:bg-muted rounded-full transition-colors relative" aria-label="Cart">
               <ShoppingBag className="w-5 h-5 text-muted-foreground" />
               <span className="absolute -top-0.5 -right-0.5 w-4 h-4 bg-primary text-primary-foreground text-xs rounded-full flex items-center justify-center">
                 0
               </span>
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -69,14 +69,14 @@ const Header = () => {
         {isMenuOpen && (
           <nav className="md:hidden py-4 border-t border-border animate-fade-in">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
-                href={link.href}
+                to={link.href}
                 className="block py-3 text-base font-medium text-muted-foreground hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
           </nav>
         )}

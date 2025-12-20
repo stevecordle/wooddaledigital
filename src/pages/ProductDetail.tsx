@@ -28,9 +28,9 @@ const product = {
     "Envelope Liner Template"
   ],
   images: [
-    "https://i.etsystatic.com/25712066/r/il/5b5b5b/3456789012/il_794xN.3456789012_abcd.jpg",
-    "https://i.etsystatic.com/25712066/r/il/6c6c6c/3456789013/il_794xN.3456789013_efgh.jpg",
-    "https://i.etsystatic.com/25712066/r/il/7d7d7d/3456789014/il_794xN.3456789014_ijkl.jpg"
+    "/placeholder.svg",
+    "/placeholder.svg",
+    "/placeholder.svg"
   ],
   badge: "Best Seller"
 };
@@ -41,28 +41,28 @@ const relatedProducts = [
     name: "Minimalist Save the Date",
     price: 8.99,
     originalPrice: 14.99,
-    image: "https://i.etsystatic.com/25712066/r/il/2a2a2a/3456789011/il_794xN.3456789011_wxyz.jpg"
+    image: "/placeholder.svg"
   },
   {
     id: 3,
     name: "Boho Wedding Menu Template",
     price: 6.99,
     originalPrice: 12.99,
-    image: "https://i.etsystatic.com/25712066/r/il/3b3b3b/3456789012/il_794xN.3456789012_mnop.jpg"
+    image: "/placeholder.svg"
   },
   {
     id: 4,
     name: "Elegant Table Numbers",
     price: 5.99,
     originalPrice: 9.99,
-    image: "https://i.etsystatic.com/25712066/r/il/4c4c4c/3456789013/il_794xN.3456789013_qrst.jpg"
+    image: "/placeholder.svg"
   },
   {
     id: 5,
     name: "Floral Welcome Sign",
     price: 9.99,
     originalPrice: 16.99,
-    image: "https://i.etsystatic.com/25712066/r/il/5d5d5d/3456789014/il_794xN.3456789014_uvwx.jpg"
+    image: "/placeholder.svg"
   }
 ];
 
